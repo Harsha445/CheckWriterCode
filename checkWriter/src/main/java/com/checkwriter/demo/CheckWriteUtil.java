@@ -67,7 +67,7 @@ public class CheckWriteUtil {
 	        if(!StringUtils.isEmpty(lastToken)){
 	    		int lastTokenIntVal = Integer.parseInt(lastToken);
 	    		if(lastTokenIntVal>0){
-	    			pass += " dollors and " + lastToken+"/100";
+	    			pass += " dollars and " + lastToken+"/100";
 	    		}else {
 	    			pass += " dollars only";
 	    		}
