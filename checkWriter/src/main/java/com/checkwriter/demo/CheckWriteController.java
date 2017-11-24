@@ -16,7 +16,7 @@ public class CheckWriteController {
     }
     
     @RequestMapping("/checkWriter")
-    public String checkWriter(@RequestParam(value="name", defaultValue="0.00") double value) {
+    public String checkWriter(@RequestParam(value="value", defaultValue="0.00") double value) {
         return CheckWriteUtil.doubleConvert(value);
     }
 	
