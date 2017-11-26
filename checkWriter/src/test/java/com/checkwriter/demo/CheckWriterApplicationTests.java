@@ -31,7 +31,7 @@ public class CheckWriterApplicationTests {
 	    }
 	 @Test
 	    public void checkWriterWithData() throws Exception {
-	        mockMvc.perform(get("/checkWriter").param("name", "125.75"))
+	        mockMvc.perform(get("/checkWriter").param("value", "125.75"))
 	                .andExpect(content().string(containsString("One Hundred Twenty Five dollars and 75/100")));
 	    }
 	public MockMvc getMockMvc() {
