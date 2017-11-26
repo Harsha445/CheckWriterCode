@@ -27,12 +27,12 @@ public class CheckWriterApplicationTests {
 	 @Test
 	    public void checkWriter() throws Exception {
 	        mockMvc.perform(get("/checkWriter"))
-	                .andExpect(content().string(containsString("0.00")));
+	                .andExpect(content().string(containsString("dollars only")));
 	    }
 	 @Test
 	    public void checkWriterWithData() throws Exception {
 	        mockMvc.perform(get("/checkWriter").param("name", "125.75"))
-	                .andExpect(content().string(containsString("One Hundred Twenty Five dollors and 75/100")));
+	                .andExpect(content().string(containsString("One Hundred Twenty Five dollars and 75/100")));
 	    }
 	public MockMvc getMockMvc() {
 		return mockMvc;
